@@ -24,6 +24,10 @@ function moviesApi(app){
         }
     });
 
+    router.get('/hola', async function(req,res,next){
+        res.send('Hola mundo')
+    })
+
     //parametros en la url - query es signo de pregunta nombre de query
     router.get('/:movieId', async function(req, res, next){
         const {movieId} = req.params
