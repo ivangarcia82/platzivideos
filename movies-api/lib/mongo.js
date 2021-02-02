@@ -21,7 +21,7 @@ class MongoLib {
             reject(err);
           }
 
-          console.log('Connected succesfully to mongo');
+          console.log('Connected succesfully to mongoDB');
           resolve(this.client.db(this.dbName));
         });
       });
